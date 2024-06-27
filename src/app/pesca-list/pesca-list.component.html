@@ -7,18 +7,27 @@
             <th>Marca</th>
             <th>Precio</th>
             <th>Stock</th>
+            <th>Elegir Cantidad</th>
         </tr>
         <tr *ngFor="let product of products" [ngClass]="{'onsale':product.onsale}">
-            <td> <img [src]="product.image" [alt]="product.producttype"> </td>
-            <td>{{product.producttype}}</td>
-            <td>{{product.trademark}}</td>
+            <td> <img class="img-thumbnail" width="100" [src]="product.image" [alt]="product.producttype"> </td>
+            <td class="fw-bold text-wrap" width="100">{{product.producttype}}</td>
+            <td class="fw-medium">{{product.trademark}}</td>
             <td>{{product.price | currency}}</td>
             <td>
                 <span class="badge text-bg-success" *ngIf="product.stock>0">DISPONIBLE</span>
                 <span class="badge text-bg-warning" *ngIf="product.stock==0">SIN STOCK</span>
             </td>
+            <td>
+                <button type="button" class="btn btn-sm btn-dark" (click)="downQuantity(product)">-</button>
+                <input 
+                 type="text"
+                 [(ngModel)]="product.quantity"
+                 (keyup)="changeCuantity($event,product)">
+                 <button  type="button" class="btn btn-sm btn-dark" (click)="upQuantity(product)">+</button>
+                 <span class="text-muted">Maximo: {{ product.stock }}</span>
+            </td>
         </tr>
     </thead>
 </table>
-
 
