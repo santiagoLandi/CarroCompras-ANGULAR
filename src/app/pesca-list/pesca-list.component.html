@@ -1,5 +1,6 @@
 <h1>Nuestros productos</h1>
-<table class="table">
+<table class="table text-
+center">
     <thead>
         <tr>
             <th>Imagen</th>
@@ -25,7 +26,7 @@
                  [(ngModel)]="product.quantity"
                  (keyup)="changeCuantity($event,product)">
                  <button  type="button" class="btn btn-sm btn-dark" (click)="upQuantity(product)">+</button>
-                 <span class="text-muted">Maximo: {{ product.stock }}</span>
+                 <span class="text-muted">Max: {{ product.stock }}</span>
             </td>
         </tr>
     </thead>
