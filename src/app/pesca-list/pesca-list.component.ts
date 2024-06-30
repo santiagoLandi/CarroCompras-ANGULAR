@@ -67,27 +67,7 @@ export class PescaListComponent  {
 
   constructor(){};
 
-  upQuantity(product:product): void{
-    if(product.quantity<product.stock)
-      product.quantity ++;
-  }
-  
-  downQuantity(product:product): void{
-    if(product.quantity>0)
-      product.quantity --;
-  }
-  changeCuantity(event:any,product:product):void {
-    const inputValue = event.target.value;
-    const parsedValue = parseInt(inputValue, ); // Intenta convertir a número
 
-    if (!isNaN(parsedValue) && parsedValue >= 0 && parsedValue <= product.stock) {
-      // El valor es un número válido y está dentro del rango de existencias
-      product.quantity = parsedValue;
-    } else {
-      // Mostrar un mensaje de error o tomar otra acción
-      console.log('Valor inválido o fuera de rango');
-    }
-  }
 }
 
   

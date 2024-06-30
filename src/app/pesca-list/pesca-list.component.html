@@ -20,13 +20,7 @@ center">
                 <span class="badge text-bg-warning" *ngIf="product.stock==0">SIN STOCK</span>
             </td>
             <td>
-                <button type="button" class="btn btn-sm btn-dark" (click)="downQuantity(product)">-</button>
-                <input 
-                 type="text"
-                 [(ngModel)]="product.quantity"
-                 (keyup)="changeCuantity($event,product)">
-                 <button  type="button" class="btn btn-sm btn-dark" (click)="upQuantity(product)">+</button>
-                 <span class="text-muted">Max: {{ product.stock }}</span>
+                 <app-input-integer [(quantity)]="product.quantity" [max]="product.stock" *ngIf="product.stock"></app-input-integer>
             </td>
         </tr>
     </thead>

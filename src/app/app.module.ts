@@ -8,6 +8,7 @@ import { FormsModule } from '@angular/forms';
 import { PescaAboutComponent } from './pesca-about/pesca-about.component';
 import { PescaTiendaComponent } from './pesca-tienda/pesca-tienda.component';
 import { CarritoComponent } from './carrito/carrito.component';
+import { InputIntegerComponent } from './input-integer/input-integer.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { CarritoComponent } from './carrito/carrito.component';
     PescaListComponent,
     PescaAboutComponent,
     PescaTiendaComponent,
-    CarritoComponent
+    CarritoComponent,
+    InputIntegerComponent
   ],
   imports: [
     BrowserModule,
