@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { product } from './product';
+import { PescaCarritoService } from '../pesca-carrito.service';
 
 @Component({
   selector: 'app-pesca-list',
@@ -64,10 +65,17 @@ export class PescaListComponent  {
       quantity:0,
     }
   ]
+  
 
-  constructor(){};
+  constructor(private carrito: PescaCarritoService){
+    
+  };
 
-
+  addToCarrito(product:product): void{
+    this.carrito.addToCarrito(product);
+    product.stock-=product.quantity;
+    product.quantity=0;
+  }
 }
 
   

@@ -8,7 +8,8 @@ center">
             <th>Marca</th>
             <th>Precio</th>
             <th>Stock</th>
-            <th>Elegir Cantidad</th>
+            <th>Cantidad</th>
+            <th>Compra</th>
         </tr>
         <tr *ngFor="let product of products" [ngClass]="{'onsale':product.onsale}">
             <td> <img class="img-thumbnail" width="100" [src]="product.image" [alt]="product.producttype"> </td>
@@ -21,6 +22,9 @@ center">
             </td>
             <td>
                  <app-input-integer [(quantity)]="product.quantity" [max]="product.stock" *ngIf="product.stock"></app-input-integer>
+            </td>
+            <td>
+                <button class="btn btn-sm btn-dark" (click)="addToCarrito(product)">Comprar</button>
             </td>
         </tr>
     </thead>
