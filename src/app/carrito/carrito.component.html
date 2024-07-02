@@ -2,6 +2,6 @@
 
 <ul>
     <li *ngFor="let p of listaCarrito$|async ">
-        {{p.producttype}}:{{p.quantity}}
+        {{p.producttype}}:{{p.quantity}} {{p.quantity*p.price}}
     </li>
 </ul>

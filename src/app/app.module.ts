@@ -9,6 +9,7 @@ import { PescaAboutComponent } from './pesca-about/pesca-about.component';
 import { PescaTiendaComponent } from './pesca-tienda/pesca-tienda.component';
 import { CarritoComponent } from './carrito/carrito.component';
 import { InputIntegerComponent } from './input-integer/input-integer.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { InputIntegerComponent } from './input-integer/input-integer.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
