@@ -1,28 +1,42 @@
 # TiendaPesca
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.4.
+La tematica abordada en el presente trabajo es sobre un carro de compras para una tienda de pesca denominada Tienda Pesca.
+Este proyecto fue realizado con  [Angular CLI](https://github.com/angular/angular-cli) version 18.0.4.
 
-## Development server
+## Componentes y servicios creados
+Para el desarrollo de este carrito de compras de la tienda de pesca se crearon los siguientes componentes:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+* pesca-list: donde se muestran todos los productos disponibles a la venta como informacion acerca de cada uno de ellos.
+* pesca-about: seccion breve donde se muestran las posibles formas de contacto de la tienda sea via redes sociales o telefono.
+* carrito: es el componente donde se van guardando las elecciones por parte del cliente.
+* pesca-tienda: es la seccion que engloba toda la parte de la venta. Es el componente padre de pesca-list y carrito.
+* input-integer: este componente se creo para ser utilizado dentro de pesca-list para registrar las cantidades de productos a comprar.
+* carrito.service: es el servicio utilizado por el  carro de compras para guardar las elecciones del cliente y colocarlas en el carrito.
+* data.service: es el servicio utilizado para traer los productos desde la API.
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Datos del alumno
 
-## Build
+**Apellido:** Landi.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+**Nombre:** Santiago.
 
-## Running unit tests
+**DNI:** 36608094.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+**Email:** slandi@gmail.com
 
-## Running end-to-end tests
+**Sede TUDAI:** Tandil.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
-# carroCompras-ANGULAR
+
+
+
+
+
+
+
+
+
+
+
