@@ -3,6 +3,7 @@
 La tematica abordada en el presente trabajo es sobre un carro de compras para una tienda de pesca denominada Tienda Pesca.
 Este proyecto fue realizado con  [Angular CLI](https://github.com/angular/angular-cli) version 18.0.4.
 
+
 ## Componentes y servicios creados
 Para el desarrollo de este carrito de compras de la tienda de pesca se crearon los siguientes componentes:
 
@@ -26,6 +27,10 @@ Para el desarrollo de este carrito de compras de la tienda de pesca se crearon l
 **Email:** slandi@gmail.com
 
 **Sede TUDAI:** Tandil.
+
+**StackBlitz:** [Enlace_Editable_StackBlitz](https://stackblitz.com/~/github.com/santiagoLandi/carroCompras-ANGULAR)
+
+
 
 
 

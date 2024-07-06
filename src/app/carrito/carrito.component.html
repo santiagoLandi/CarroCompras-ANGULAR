@@ -1,7 +1,14 @@
 <h3>Carrito de compras</h3>
+<table class="table text-center">
+    <th></th>
+    <th>Subtotal</th>
+    <tr *ngFor="let p of listaCarrito$|async">
+        <td>{{p.producttype}}:{{p.quantity}}</td>
+        <td>{{p.quantity*p.price}}</td>
+    </tr>
+</table>
 
-<ul>
-    <li *ngFor="let p of listaCarrito$|async ">
-        {{p.producttype}}:{{p.quantity}} {{p.quantity*p.price}}
-    </li>
-</ul>
+
+
+
+

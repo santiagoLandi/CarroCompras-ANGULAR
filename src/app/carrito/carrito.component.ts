@@ -9,12 +9,13 @@ import { Observable } from 'rxjs/internal/Observable';
   styleUrl: './carrito.component.scss'
 })
 export class CarritoComponent {
-
+  
   listaCarrito$!: Observable<product[]>;
-
+  
   constructor(private carrito: PescaCarritoService){
     this.listaCarrito$=carrito.listaCarrito.asObservable();
-   
+    
   };
-
+  
+ 
 }

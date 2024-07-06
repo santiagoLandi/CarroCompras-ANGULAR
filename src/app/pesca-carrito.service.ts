@@ -15,7 +15,7 @@ export class PescaCarritoService {
 
   addToCarrito(product: product) {
     let item: product | null = this._listaCarrito.find((v1) => v1.producttype == product.producttype) || null;
-    if (!item) {
+    if (!item)  {
         this._listaCarrito.push({...product});
     }else{
       item.quantity += product.quantity;
